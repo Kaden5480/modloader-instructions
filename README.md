@@ -2,11 +2,36 @@
 Install instructions for BepInEx and MelonLoader.
 
 # Overview
-- [BepInEx](#bepinex)
+- [BepInEx (Windows)](#bepinex-windows)
+- [BepInEx (Linux)](#bepinex-linux)
 - [MelonLoader (Windows)](#melonloader-windows)
 - [MelonLoader (Linux)](#melonloader-linux)
 
-# BepInEx
+# BepInEx (Windows)
+- Download the latest stable win_x64 version of BepInEx
+[here](https://github.com/BepInEx/BepInEx/releases).
+- Find your game directory, this is most easily done by going to the game in steam,
+  pressing the settings for the game (⚙️), selecting "Manage", then "Browse local files".
+- Extract the contents of `BepInEx_win_x64_<version>.zip` into your game directory.
+- You should now have files/directories such as `BepInEx` and `winhttp.dll`
+  in the same place as `UnityPlayer.dll`.
+- Start the game so BepInEx can generate other necessary files for modding.
+- Close the game.
+
+# BepInEx (Linux)
+## Prerequisites
+- Install [protontricks](https://pkgs.org/download/protontricks).
+
+## Prefix configuration
+- Open protontricks.
+- Select the game you intend to mod.
+- Select "Select the default wineprefix" and press "OK".
+- Select "Run winecfg" and press "OK".
+- Change "Windows Version" to "Windows 10" and press "Apply".
+- Switch to the "Libraries" tab.
+- Where it says "New override for library:", choose "winhttp", press "Add", then press "OK".
+
+## Installing BepInEx
 - Download the latest stable win_x64 version of BepInEx
 [here](https://github.com/BepInEx/BepInEx/releases).
 - Find your game directory, this is most easily done by going to the game in steam,
